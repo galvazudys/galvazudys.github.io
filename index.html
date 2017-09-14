@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=VT323|Zilla+Slab+Highlight" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323|Zilla+Slab+Highlight|Josefin+Slab" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="stylesheet" href="bower_components\semantic\dist\semantic.min.css">
     <title>Stepas Loiba | galvazudys</title>
 
 </head>
@@ -19,7 +20,7 @@
             <br>
 
             <div class="container">
-                <h1 id="title" class="ui header">
+                <h1 id="title" class="ui header ">
                     Galvazudys | Stepas Loiba
                 </h1>
                 <h3 id="subtitle" class="ui header">
@@ -27,23 +28,66 @@
                 </h3>
             </div>
         </div>
+
+
+        <!-- Navbar part of page -->
         <div id="menu" class="ui menu ">
+            <div class="header item">galvazudys@<i class="large github icon"></i></div>
             <div class="right menu">
-                <div class="header item">
+                <a href="#about" class="header item">
                     About
-                </div>
-                <a class="header item">
+                </a>
+                <a href="#portfolio" class="header item">
                                Portfolio
                               </a>
 
                 <a class="header item">
-                        <button class="ui inverted purple button">Contact</button>
-                              </a>
+                    <button class="ui basic  purple button">Contact</button>
+                </a>
             </div>
         </div>
+        <!--end of Navbar-->
 
+
+
+        <!-- about page part -->
+        <a name="about"></a>
+        <div id="aboutWrapper" >
+            <h3 class="ui header">About</h3>
+            <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas
+                in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+            <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis
+                in.
+            </p>
+            <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum
+                elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+        </div>
+
+        <div id="secondParallax"><h1 id="portfolioParallax">Portfolio</h1></div>
+        <!-- Portfolio part of page -->
+        <a name="portfolio"></a>
+        <div class="ui middle aligned divided list">
+                <div class="item" v-for="data in myData">
+                        <div class="right floated content">
+                            <a :href="data.html_url"> <div class="ui  green button">Repo</div></a>
+                        </div>
+                        <img class="ui avatar image" v-if="data.language === 'JavaScript'" src="/img/if_node-js.png">
+                        <img class="ui avatar image" v-else-if="data.language === 'Java'" src="/img/if_java.png">
+                        <img class="ui avatar image" v-else src="/img/if_code_brackets.png">
+                        
+                        <div class="content">
+                          <div class="header">{{data.name}}</div>
+                          <div  class="description dateInList">{{data.created_at.substring(0,10)}}</div>
+                        </div>
+                      </div>
+        </div>
+        <div id="lastParallax"><h1 id="contactParallax">Contact</h1></div>
     </div>
-    <script src="https://unpkg.com/vue"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+    <script src="bower_components\jquery\dist\jquery.min.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>

@@ -20,19 +20,96 @@
 
 #paralax{
     background-image: url('./img/coding.jpg');
-    height: 400px;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 9px 26px -5px rgba(0,0,0,0.61);
+}
+
+
+
+#menu{
+    margin-top: 0;
+  
+
+
+}
+
+.ui.three.item.menu{
+    height: 10px;
+}
+
+
+
+
+
+
+a.column{
+    text-align: center;
+    color: inherit;
+}
+
+#secondParallax{
+    background-image: url('./img/coffee.jpeg');
+    height: 300px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.ui menu{
-    position: fixed;
-    padding: 20px 0;
+
+#portfolioParallax{
+    text-align: center;
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 80px;
+    padding-top: 100px;
+    
+    
 }
 
 
-#menu{
-    margin-top: 0;
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+
+#aboutWrapper{
+    margin: 110px 60px;
+    line-height: 10px;
+    font-family: 'Josefin Slab', serif;
+    letter-spacing: 1px;
+    font-weight: 900
+}
+
+.dateInList{
+    font-family: 'Josefin Slab', serif;
+}
+
+.ui.middle.aligned.divided.list{
+    margin: 100px;
+}
+
+#lastParallax{
+    background-image: url('./img/coffee-coding.jpeg');
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#contactParallax{
+    text-align: center;
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 80px;
+    padding-top: 100px;
+    color:#e5e3e3;
 }
