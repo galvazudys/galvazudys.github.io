@@ -113,3 +113,15 @@ a.column{
     padding-top: 100px;
     color:#e5e3e3;
 }
+
+
+
+#contact{
+    background: #5b5c60;
+    height: 150px;
+}
+
+
+.ui.buttomPart.buttons{
+    margin-left:40%;
+}
