@@ -159,4 +159,13 @@ a.column{
     .ui.middle.aligned.divided.list{
         margin: 100px 10px;
     }
+
+    #portfolioParallax{
+        text-align: center;
+        font-family: 'Zilla Slab Highlight', cursive;
+        font-size: 60px;
+        padding-top: 100px;
+        
+        
+    }
 }
