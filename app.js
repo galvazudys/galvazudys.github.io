@@ -18,9 +18,9 @@ var app = new Vue({
             .get('https://api.github.com/user/repos?access_token=26b2b54a71e7f8fb16cef469d6b47ec84' +
                 '76288d3')
             .then(response => {
-                console.log(response)
+                
                 this.myData = response.data;
-                console.log(this.myData)
+                
             })
     }
 });
