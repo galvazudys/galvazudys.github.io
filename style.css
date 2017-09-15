@@ -123,5 +123,24 @@ a.column{
 
 
 .ui.buttomPart.buttons{
-    margin-left:40%;
+    margin-left:45%;
+}
+
+
+#contactHeader{
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    color:#e5e3e3;
+}
+
+
+#contactHeader h2 {
+    font-family: 'Josefin Slab', serif;
+    margin-bottom:40px;
+}
+
+
+#email{
+    text-align: center;
+    color: #e5e3e3;
 }
