@@ -145,3 +145,18 @@ a.column{
     color: #e5e3e3;
 }
 
+
+@media(max-width:480px){
+    #aboutWrapper{
+        margin: 110px 10px;
+    }
+
+
+    #githubName{
+        display: none;
+    }
+
+    .ui.middle.aligned.divided.list{
+        margin: 100px 10px;
+    }
+}
