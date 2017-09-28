@@ -37,3 +37,8 @@ $(document).ready(function() {
       }
     });
   });
+
+
+  analytics.trackLink($("#about"), 'message');
+  analytics.trackLink($("#portfolio"), 'message');
+  
