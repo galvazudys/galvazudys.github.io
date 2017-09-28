@@ -43,6 +43,11 @@
                 }
         }();
         analytics.identify();
+        analytics.group();
+        analytics.track('Clicked CTA', {
+            location: 'header',
+            type: 'button'
+        });
     </script>
     <link rel="stylesheet" href="bower_components\semantic\dist\semantic.min.css">
     <title>Stepas Loiba | galvazudys</title>
@@ -69,7 +74,7 @@
         <div id="menu" class="ui menu ">
             <div id="githubName" class="header item">galvazudys@<i class="large github icon"></i></div>
             <div class="right menu">
-                <a href="#about" class="header item">
+                <a href="#about" id="about" class="header item">
                     About
                 </a>
                 <a href="#portfolio" class="header item">
