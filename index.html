@@ -9,8 +9,17 @@
     <link rel="stylesheet" href="./style.css">
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107204701-1"></script>
+
+
     <!-- start Mixpanel -->
+
     <script type="text/javascript">
+        analytics.track('Clicked CTA', {
+            location: 'header',
+            type: 'button'
+        });
+
+
         (function(e, a) {
             if (!a.__SV) {
                 var b = window;
